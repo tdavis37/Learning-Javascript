@@ -1,0 +1,21 @@
+//found the solution to why JavaScript wasn't displaying output on this website:  
+//https://stackoverflow.com/questions/31778413/run-javascript-in-visual-studio-code#:~:text=There%20is%20no%20need%20to,on%20the%20upper%20right%20corner.&text=Use%20your%20own%20keybinding.
+
+{
+    "version": "0.1.0",
+    "command": "node",
+    "isShellCommand": true,
+    "args": [
+        "--harmony"
+    ],
+
+    "tasks": [
+        {
+            "taskName": "runFile",
+            "suppressTaskName": true,
+            "showOutput": "always",
+            "problemMatcher": "$jshint",
+            "args": ["${file}"]
+        }
+    ]
+}
